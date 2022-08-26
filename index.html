@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Pyae Sone Min Naing's Resume</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              main: ['"Poppins"', "sans-serif"],
+            },
+            gridTemplateColumns: {
+              layout: "30% 70%",
+            },
+            colors: {
+              main: "#0A1931",
+              secondary: "#224e92",
+              white: "#EFEFEF",
+              bright: "#FFC947",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Pyae Sone M N</title>
+  </head>
+  <body class="bg-main">
+    <main class="max-w-[1440px] mx-auto">
+      <section class="bg-white grid grid-cols-layout mx-10">
+        <div class="bg-secondary px-12 py-16 font-main">
+          <div class="flex flex-col gap-y-16">
+            <div class="mx-auto">
+              <img
+                class="rounded-full w-[240px] aspect-square"
+                style="object-fit: cover"
+                src="utils/images/profile.jpg"
+                alt="My Profile"
+              />
+            </div>
+            <div id="Contact">
+              <h2
+                class="text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+              >
+                My Contact
+              </h2>
+              <ul class="flex flex-col gap-y-4">
+                <li class="text-white">
+                  <h3 class="text-2xl capitalize font-semibold tracking-wide">
+                    Phone
+                  </h3>
+                  <p>09 762465752</p>
+                </li>
+                <li class="text-white">
+                  <h3 class="text-2xl capitalize font-semibold tracking-wide">
+                    Gmail
+                  </h3>
+                  <p>pyaesoneminnaing2019@gmail.com</p>
+                </li>
+                <li class="text-white">
+                  <h3 class="text-2xl capitalize font-semibold tracking-wide">
+                    Address
+                  </h3>
+                  <p>123 Anywhere St., Any City</p>
+                </li>
+                <li class="text-white">
+                  <h3 class="text-2xl capitalize font-semibold tracking-wide">
+                    Website
+                  </h3>
+                  <p>blahblah.dev</p>
+                </li>
+              </ul>
+            </div>
+            <div id="Expertise">
+              <h2
+                class="text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+              >
+                Expertise
+              </h2>
+              <ul class="flex flex-col gap-y-4 text-white">
+                <li>Basic UI/UX</li>
+                <li>Frontend Development</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+              </ul>
+            </div>
+            <div id="Language">
+              <h2
+                class="text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+              >
+                Language
+              </h2>
+              <ul class="flex flex-col gap-y-4 text-white">
+                <li>Burmese - Native</li>
+                <li>English - Intermediate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white font-main">
+          <div class="w-full h-[8px] bg-secondary my-6"></div>
+          <div class="text-center text-secondary">
+            <h1 class="text-6xl font-semibold tracking-wide">
+              Pyae Sone Min Naing
+            </h1>
+            <h2 class="text-4xl font-normal tracking-widest">
+              Frontend Developer
+            </h2>
+          </div>
+          <div class="px-12">
+            <div>About</div>
+            <div>Education</div>
+            <div>Skill Sets</div>
+            <div>Experience</div>
+            <div>Projects</div>
+          </div>
+          <div class="w-full h-[8px] bg-secondary my-6"></div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
