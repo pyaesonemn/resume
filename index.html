@@ -42,80 +42,157 @@
   </head>
   <body class="bg-main">
     <main class="max-w-[1440px] mx-auto">
-      <section class="bg-white grid grid-cols-layout mx-20">
-        <div id="side-bar" class="bg-secondary px-6 xl:px-10 py-16 font-main">
-          <div class="flex flex-col lg:gap-y-12 xl:gap-y-16">
-            <div class="mx-auto">
+      <section class="bg-white grid grid-cols-1 lg:grid-cols-layout lg:mx-20">
+        <div
+          id="side-bar"
+          class="bg-secondary sm:px-6 xl:px-10 py-12 lg:py-16 font-main"
+        >
+          <div class="flex flex-col gap-y-8 lg:gap-y-12 xl:gap-y-16">
+            <div
+              id="image"
+              class="lg:mx-auto mx-auto sm:mx-0 md:px-6 sm:px-2 lg:block sm:w-full flex flex-col sm:flex-row items-center gap-y-6 md:gap-x-6"
+            >
               <img
-                class="rounded-full lg:w-[160px] xl:w-[240px] aspect-square"
+                class="rounded-full w-[240px] md:w-[180px] sm:w-[160px] lg:w-[160px] xl:w-[240px] aspect-square"
                 style="object-fit: cover"
                 src="utils/images/profile.jpg"
                 alt="My Profile"
               />
+              <div class="w-full lg:hidden font-main text-white text-center">
+                <h1
+                  class="text-[28px] sm:text-[32px] md:text-[40px] font-semibold tracking-wider"
+                >
+                  Pyae Sone Min Naing
+                </h1>
+                <h2
+                  class="text-[20px] sm:text-[24px] md:text-[28px] font-normal tracking-widest"
+                >
+                  Frontend Developer
+                </h2>
+              </div>
             </div>
-            <div id="Contact">
+            <div
+              id="socials"
+              class="w-full flex flex-row gap-x-4 justify-evenly lg:hidden"
+            >
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=nBmNcLBaPUE"
+                  target="_blank"
+                  class="pointer-cursor text-white"
+                  >Twitter</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=nBmNcLBaPUE"
+                  target="_blank"
+                  class="pointer-cursor text-white"
+                  >LinkedIn</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://github.com/pyaesonemn"
+                  target="_blank"
+                  class="pointer-cursor text-white"
+                  >Github</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=nBmNcLBaPUE"
+                  target="_blank"
+                  class="pointer-cursor text-white"
+                  >Facebook</a
+                >
+              </div>
+              <div class="hidden sm:block">
+                <a
+                  href="https://www.youtube.com/watch?v=nBmNcLBaPUE"
+                  target="_blank"
+                  class="pointer-cursor text-white"
+                  >Download Resume</a
+                >
+              </div>
+            </div>
+            <div id="contact" class="block px-8 lg:px-0">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-bright font-bold tracking-wide pb-4 lg:pb-8"
               >
                 My Contact
               </h2>
-              <ul class="flex flex-col gap-y-4">
-                <li class="text-white">
+              <ul
+                class="flex flex-col gap-y-1 sm:gap-y-2 lg:gap-y-4 lg:px-0 px-0"
+              >
+                <li
+                  class="text-white flex flex-row gap-x-2 lg:block items-center"
+                >
                   <h3
                     class="xl:text-2xl lg:text-xl capitalize font-semibold tracking-wide pb-1"
                   >
                     Phone
                   </h3>
-                  <p>09 762465752</p>
+                  <span class="lg:hidden"> : </span>
+                  <p class="text-sm sm:text-base">09 762465752</p>
                 </li>
-                <li class="text-white">
+                <li
+                  class="text-white flex flex-row gap-x-2 lg:block items-center"
+                >
                   <h3
                     class="xl:text-2xl lg:text-xl capitalize font-semibold tracking-wide pb-1"
                   >
                     Gmail
                   </h3>
-                  <p class="xl:text-sm lg:text-xs">
+                  <span class="lg:hidden"> : </span>
+                  <p class="xl:text-sm text-xs">
                     pyaesoneminnaing2019@gmail.com
                   </p>
                 </li>
-                <li class="text-white">
+                <li
+                  class="text-white flex flex-row gap-x-2 lg:block items-center"
+                >
                   <h3
-                    class="xl:text-2xllg:text-xl capitalize font-semibold tracking-wide pb-1"
+                    class="xl:text-2xl lg:text-xl text-sm capitalize font-semibold tracking-wide pb-1"
                   >
                     Address
                   </h3>
-                  <p>123 Anywhere St., Any City</p>
+                  <span class="lg:hidden"> : </span>
+                  <p class="xl:text-sm text-xs">123 Anywhere St., Any City</p>
                 </li>
-                <li class="text-white">
+                <li
+                  class="text-white flex flex-row gap-x-2 lg:block items-center"
+                >
                   <h3
-                    class="xl:text-2xllg:text-xl capitalize font-semibold tracking-wide pb-1"
+                    class="xl:text-2xl lg:text-xl text-sm capitalize font-semibold tracking-wide pb-1"
                   >
                     Website
                   </h3>
-                  <p>blahblah.dev</p>
+                  <span class="lg:hidden"> : </span>
+                  <p class="xl:text-sm text-xs">blahblah.dev</p>
                 </li>
               </ul>
             </div>
-            <div id="Expertise">
+            <div id="Expertise" class="block px-8 lg:px-0">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-bright font-bold tracking-wide pb-4 lg:pb-8"
               >
                 Expertise
               </h2>
-              <ul class="flex flex-col gap-y-4 text-white">
+              <ul class="flex flex-col gap-y-2 lg:gap-y-4 text-white">
                 <li>Basic UI/UX</li>
                 <li>Frontend Development</li>
                 <li>Teamwork</li>
                 <li>Problem Solving</li>
               </ul>
             </div>
-            <div id="Language">
+            <div id="Language" class="block px-8 lg:px-0">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-bright font-bold tracking-wide pb-8"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-bright font-bold tracking-wide pb-4 lg:pb-8"
               >
                 Language
               </h2>
-              <ul class="flex flex-col gap-y-4 text-white">
+              <ul class="flex flex-col gap-y-2 lg:gap-y-4 text-white">
                 <li>Burmese - Native</li>
                 <li>English - Intermediate</li>
               </ul>
@@ -123,8 +200,12 @@
           </div>
         </div>
         <div id="main-content" class="bg-white font-main">
-          <div class="w-full h-[6px] xl:h-[8px] bg-secondary my-6"></div>
-          <div class="text-center text-secondary lg:pb-12 xl:pb-20">
+          <div
+            class="hidden lg:block w-full h-[6px] xl:h-[8px] bg-secondary my-6"
+          ></div>
+          <div
+            class="hidden lg:block text-center text-secondary lg:pb-12 xl:pb-20"
+          >
             <h1 class="xl:text-6xl lg:text-5xl font-semibold tracking-wide">
               Pyae Sone Min Naing
             </h1>
@@ -132,15 +213,15 @@
               Frontend Developer
             </h2>
           </div>
-          <div class="px-6 xl:px-10">
-            <div id="about-myself" class="lg:pb-6 xl:pb-12">
+          <div class="px-6 xl:px-10 lg:py-0 py-12">
+            <div id="about-myself" class="pb-8 lg:pb-6 xl:pb-12">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-main/70 font-bold tracking-wide lg:pb-1 xl:pb-4"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-main/70 font-bold tracking-wide pb-2 lg:pb-1 xl:pb-4"
               >
                 About Myself
               </h2>
               <p
-                class="font-text font-medium lg:text-base xl:text-lg tracking-wider leading-8"
+                class="font-text font-medium lg:text-base xl:text-lg tracking-wider leading-6 lg:leading-8"
               >
                 An active and keen freelance web developer specialized in
                 frontend development. I love solving problems and learning new
@@ -148,9 +229,9 @@
                 developing websites and apps that will help people around me.
               </p>
             </div>
-            <div id="education" class="lg:pb-6 xl:pb-12">
+            <div id="education" class="pb-8 lg:pb-6 xl:pb-12">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-main/70 font-bold tracking-wide lg:pb-1 xl:pb-4"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-main/70 font-bold tracking-wide pb-2 lg:pb-1 xl:pb-4"
               >
                 Education
               </h2>
@@ -178,9 +259,9 @@
                 </li>
               </ol>
             </div>
-            <div id="skill-sets" class="lg:pb-6 xl:pb-12">
+            <div id="skill-sets" class="pb-8 lg:pb-6 xl:pb-12">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-main/70 font-bold tracking-wide lg:pb-1 xl:pb-4"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-main/70 font-bold tracking-wide pb-2 lg:pb-1 xl:pb-4"
               >
                 Skill Sets
               </h2>
@@ -188,23 +269,23 @@
                 No Skills Yet.
               </p>
             </div>
-            <div id="experience" class="lg:pb-6 xl:pb-12">
+            <div id="experience" class="pb-8 lg:pb-6 xl:pb-12">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-main/70 font-bold tracking-wide lg:pb-1 xl:pb-4"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-main/70 font-bold tracking-wide pb-2 lg:pb-1 xl:pb-4"
               >
                 Experience
               </h2>
               <p
-                class="font-text font-medium lg:text-base xl:text-lg tracking-wider leading-8"
+                class="font-text font-medium lg:text-base xl:text-lg tracking-wider leading-6 lg:leading-8"
               >
                 Unfortunately I have no full-time experience yet but I do have
                 experience on building real world projects. I have built some
                 decent projects working together with other developers.
               </p>
             </div>
-            <div id="projects" class="lg:pb-6 xl:pb-12">
+            <div id="projects" class="pb-8 lg:pb-6 xl:pb-12">
               <h2
-                class="xl:text-4xl lg:text-3xl uppercase text-main/70 font-bold tracking-wide lg:pb-1 xl:pb-4"
+                class="xl:text-4xl lg:text-3xl text-2xl uppercase text-main/70 font-bold tracking-wide pb-2 lg:pb-1 xl:pb-4"
               >
                 Projects
               </h2>
@@ -212,7 +293,9 @@
                 class="list-disc lg:text-base xl:text-lg ml-8 flex flex-col gap-y-4"
               >
                 <li>
-                  <h2 class="font-bold text-2xl text-main/70 tracking-widest">
+                  <h2
+                    class="font-bold text-xl lg:text-2xl text-main/70 tracking-widest"
+                  >
                     Movie Website
                   </h2>
                   <p class="font-text font-medium tracking-wider leading-6">
@@ -222,7 +305,9 @@
                   </p>
                 </li>
                 <li>
-                  <h2 class="font-bold text-2xl text-main/70 tracking-widest">
+                  <h2
+                    class="font-bold text-xl lg:text-2xl text-main/70 tracking-widest"
+                  >
                     Landing Pages
                   </h2>
                   <p class="font-text font-medium tracking-wider leading-6">
@@ -231,7 +316,9 @@
                   </p>
                 </li>
                 <li>
-                  <h2 class="font-bold text-2xl text-main/70 tracking-widest">
+                  <h2
+                    class="font-bold text-xl lg:text-2xl text-main/70 tracking-widest"
+                  >
                     Functional Blogs Website
                   </h2>
                   <p class="font-text font-medium tracking-wider leading-6">
@@ -244,7 +331,9 @@
               </ol>
             </div>
           </div>
-          <div class="w-full h-[6px] xl:h-[8px] bg-secondary my-6"></div>
+          <div
+            class="hidden lg:block w-full h-[6px] xl:h-[8px] bg-secondary my-6"
+          ></div>
         </div>
       </section>
     </main>
